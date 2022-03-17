@@ -454,6 +454,11 @@ section.contacts .form-container label {
     text-transform: uppercase;
 }
 
+section.contacts .form-container label:last-of-type {
+    text-transform: unset;
+    margin-bottom: 1em;
+}
+
 section.contacts .form-container input {
     display: block;
     width: 100%;
@@ -487,7 +492,6 @@ section.contacts .form-container footer div {
 }
 
 section.contacts .form-container input[type='checkbox'] {
-    margin-top: 1.8em;
     width: fit-content;
 }
 
