@@ -17,7 +17,7 @@
             <div class="navbar-container">
                 <img src="images/logo-alt.svg" alt="Studio Commercialista" class="logo">
 
-                <nav class="main-nav">
+                <nav id="primary-navigation" class="main-nav">
                     <ul>
                         <li><a href="#studio">Lo Studio</a></li>
                         <li><a href="#consultancy">Aree di Consulenza</a></li>
@@ -25,7 +25,8 @@
                     </ul>
                 </nav>
 
-                <button class="mobile-menu">
+                <button class="mobile-menu" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
                     <div></div>
                 </button>
             </div>
@@ -404,7 +405,15 @@
             const mobileMenu = document.querySelector('.mobile-menu');
 
             mobileMenu.addEventListener('click', () => {
-                navbar.classList.toggle('open')
+                navbar.classList.toggle('open');
+
+                const visibility = mobileMenu.getAttribute('aria-expanded')
+
+                if (visibility === "false") {
+                    mobileMenu.setAttribute('aria-expanded', true)
+                } else if (visibility === "true") {
+                    mobileMenu.setAttribute('aria-expanded', false)
+                }
             });
         </script>
     </div>

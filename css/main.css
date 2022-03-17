@@ -152,6 +152,19 @@ h3::before {
     background-color: #FFF;
 }
 
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
 /* Hero Section */
 
 /* Navbar */
@@ -454,7 +467,7 @@ section.contacts .form-container label {
     text-transform: uppercase;
 }
 
-section.contacts .form-container label:last-of-type {
+section.contacts .form-container label:last-child {
     text-transform: unset;
     margin-bottom: 1em;
 }
