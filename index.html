@@ -7,6 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        // Mobile Menu
+
+        const navbar = document.querySelector('.navbar-container');
+        const mainNav = document.querySelector('.main-nav');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('open');
+
+            const visibility = mobileMenu.getAttribute('aria-expanded')
+
+            if (visibility === "false") {
+                mobileMenu.setAttribute('aria-expanded', true)
+            } else if (visibility === "true") {
+                mobileMenu.setAttribute('aria-expanded', false)
+            }
+        });
+    </script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Studio Commercialista - Consulenze Su Misura</title>
@@ -400,26 +419,6 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        // Mobile Menu
-
-        const navbar = document.querySelector('.navbar-container');
-        const mainNav = document.querySelector('.main-nav');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        mobileMenu.addEventListener('click', () => {
-            navbar.classList.toggle('open');
-
-            const visibility = mobileMenu.getAttribute('aria-expanded')
-
-            if (visibility === "false") {
-                mobileMenu.setAttribute('aria-expanded', true)
-            } else if (visibility === "true") {
-                mobileMenu.setAttribute('aria-expanded', false)
-            }
-        });
-    </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
