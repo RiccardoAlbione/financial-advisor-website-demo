@@ -180,17 +180,6 @@ h3::before {
     animation: nav-animation 2.2s ease-in 0.6s both;
 }
 
-@keyframes nav-animation {
-
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 .hero .navbar-container .logo {
     width: 10rem;
 }
@@ -814,6 +803,18 @@ section.contacts .form-container footer .form-btn {
 
     .hero .navbar-container {
         padding: 1em 5.3em;
+        animation: nav-animation 2.2s ease-in 0.6s both;
+    }
+
+    @keyframes nav-animation {
+
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
     }
 
     .hero .navbar-container .logo {
