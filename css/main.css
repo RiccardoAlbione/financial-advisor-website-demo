@@ -592,13 +592,25 @@ section.contacts .form-container footer .form-btn {
         text-align: center;
         box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
         transform: translateX(-100%);
+        visibility: hidden;
         opacity: 0;
+        max-height: 0;
         transition: transform 0.45s ease-in, opacity 0.3s ease-in;
     }
 
     .hero .navbar-container.open .main-nav {
+        visibility: visible;
         opacity: 1;
+        max-height: 1000px;
         transform: translateX(0%);
+    }
+
+    .hero .main-nav .nav-cta {
+        display: none;
+    }
+
+    .hero .navbar-container.open .main-nav .nav-cta {
+        display: block;
     }
 
     .hero .main-nav ul {
