@@ -177,6 +177,18 @@ h3::before {
     width: 100%;
     padding: 1em 1.8em;
     z-index: 1000;
+    animation: nav-animation 2.2s ease-in 0.6s both;
+}
+
+@keyframes nav-animation {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .hero .navbar-container .logo {
@@ -225,7 +237,7 @@ h3::before {
     padding: 3em 1.8em 2em;
     max-width: 1700px;
     margin: 0 auto;
-    animation: hero-animation 1.3s ease-in;
+    animation: hero-animation 1.5s ease-in 0.6s both;
 }
 
 @keyframes hero-animation {
@@ -262,16 +274,18 @@ h3::before {
 }
 
 .hero-img {
-    animation: hero-img-animation 1.3s ease-in;
+    animation: hero-img-animation 1.7s ease-in 0.6s both;
 }
 
 @keyframes hero-img-animation {
 
     from {
+        opacity: 0;
         clip-path: inset(100% 0 0 0);
     }
 
     to {
+        opacity: 1;
         clip-path: inset(0 0 0 0);
     }
 }

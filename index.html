@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Studio Commercialista - Consulenze Su Misura</title>
 </head>
 
@@ -59,7 +60,7 @@
 
         <main class="studio" id="studio">
             <div class="studio-content">
-                <div>
+                <div data-aos="fade-up">
                     <h2>Lo Studio</h2>
                     <p class="sub-header">Mattis convallis eget mi faucibus sed sit.</p>
                     <p>
@@ -74,7 +75,7 @@
                 </div>
 
 
-                <picture>
+                <picture data-aos="fade-left">
                     <source srcset="images/img-2.jpg" media="(min-width: 1220px)"> 
                     <source srcset="images/img-2-tablet.jpg" media="(min-width: 530px)">
                     <img src="images/img-2-mobile.jpg" alt="Foto di commercialista al lavoro sul suo laptop">
@@ -82,7 +83,7 @@
             </div>
 
             <div class="studio-professionals">
-                <div class="professionals-inner">
+                <div class="professionals-inner" data-aos="fade-right">
                     <header>
                         <img src="images/img-francesco-rossi.jpg" loading="lazy" alt="Foto del dott. Francesco Rossi">
                         <div>
@@ -112,7 +113,7 @@
                     </ul>
                 </div>
 
-                <div class="professionals-inner">
+                <div class="professionals-inner" data-aos="fade-left">
                     <header>
                         <img src="images/img-giulia-ferrari.jpg" loading="lazy" alt="Foto della dott.ssa Giulia Ferrari">
                         <div>
@@ -145,7 +146,7 @@
                 </div>
             </div>
 
-            <picture>
+            <picture data-aos="zoom-in">
                 <source srcset="images/img-3.jpg" media="(min-width: 1040px)"> 
                 <source srcset="images/img-3-tablet.jpg" media="(min-width: 530px)">
                 <img src="images/img-3-mobile.jpg" loading="lazy" alt="Immagine della Fontana di Trevi">
@@ -154,9 +155,9 @@
 
         <section class="consultancy" id="consultancy">
             <div class="consultancy-content">
-                <img src="images/illustrazione-consulenza.svg" loading="lazy" alt="Illustrazione di un monitor con un grafico a schermo">
+                <img src="images/illustrazione-consulenza.svg" data-aos="fade-right" loading="lazy" alt="Illustrazione di un monitor con un grafico a schermo">
 
-                <div>
+                <div data-aos="fade-left">
                     <h2>Aree di Consulenza</h2>
                     <p class="sub-header">Consulenze Mirate alle Specifiche Esigenze dei Clienti</p>
                     <p>
@@ -168,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="consultancy-grid">
+            <div class="consultancy-grid" data-aos="fade-up">
                 <div class="consultancy-card">
                     <img src="images/icona-consulenza-fiscale.svg" loading="lazy" alt="">
                     <h4 class="sub-header">Consulenza Fiscale</h4>
@@ -218,7 +219,7 @@
                 </div>
             </div>
 
-            <picture>
+            <picture data-aos="zoom-in">
                 <source srcset="images/img-4.jpg" media="(min-width: 1040px)"> 
                 <source srcset="images/img-4-tablet.jpg" media="(min-width: 530px)">
                 <img src="images/img-4-mobile.jpg" loading="lazy" alt="Immagine della vista di Roma">
@@ -227,7 +228,7 @@
 
         <section class="contacts" id="contacts">
             <div class="contacts-container">
-                <div class="contacts-content">
+                <div class="contacts-content" data-aos="fade-right">
                     <h2>Contatti</h2>
                     <p class="sub-header">Richiedi Informazioni Senza Impegno</p>
 
@@ -288,11 +289,11 @@
                     </div>
                 </div>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7782380464555!2d12.57536281494392!3d41.876117473518086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f628af109f9ff%3A0x78ee4e641ff882f4!2sVia%20dei%20Fiori%2C%2000172%20Roma%20RM!5e0!3m2!1sit!2sit!4v1647025176615!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe data-aos="fade-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7782380464555!2d12.57536281494392!3d41.876117473518086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f628af109f9ff%3A0x78ee4e641ff882f4!2sVia%20dei%20Fiori%2C%2000172%20Roma%20RM!5e0!3m2!1sit!2sit!4v1647025176615!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <div class="form-container">
-                <form action="">
+                <form action="" data-aos="fade-up">
                     <h3>Hai Qualche Dubbio? <br> Contattaci Direttamente</h3>
 
                     <div class="form-info">
@@ -337,7 +338,7 @@
         </section>
 
         <footer class="main-footer">
-            <div class="footer-container">
+            <div class="footer-container" data-aos="fade-left">
                 <img class="logo" src="images/logo-alt-light.svg" loading="lazy" alt="Studio Commercialista">
 
                 <div class="footer-contacts">
@@ -398,24 +399,35 @@
                 <p class="footer-copyright">© Studio Commercialista 2022</p>
             </div>
         </footer>
-
-        <script>
-            const navbar = document.querySelector('.navbar-container');
-            const mainNav = document.querySelector('.main-nav');
-            const mobileMenu = document.querySelector('.mobile-menu');
-
-            mobileMenu.addEventListener('click', () => {
-                navbar.classList.toggle('open');
-
-                const visibility = mobileMenu.getAttribute('aria-expanded')
-
-                if (visibility === "false") {
-                    mobileMenu.setAttribute('aria-expanded', true)
-                } else if (visibility === "true") {
-                    mobileMenu.setAttribute('aria-expanded', false)
-                }
-            });
-        </script>
     </div>
+
+    <script>
+        // Mobile Menu
+
+        const navbar = document.querySelector('.navbar-container');
+        const mainNav = document.querySelector('.main-nav');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('open');
+
+            const visibility = mobileMenu.getAttribute('aria-expanded')
+
+            if (visibility === "false") {
+                mobileMenu.setAttribute('aria-expanded', true)
+            } else if (visibility === "true") {
+                mobileMenu.setAttribute('aria-expanded', false)
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            offset: 100,
+            once: true
+        });
+    </script>
 </body>
 </html>
