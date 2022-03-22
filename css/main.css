@@ -593,7 +593,7 @@ section.contacts .form-container footer .form-btn {
 
     body {
         color: #f0f0f0;
-        background-color: #080a0f;
+        background-color: #0d1018;
     }
 
     h1,
@@ -652,7 +652,7 @@ section.contacts .form-container footer .form-btn {
     /* Consultancy Section */
 
     section.consultancy {
-        background-color: #080a0f;
+        background-color: #0d1018;
     }
 
     .consultancy-content img {
@@ -715,7 +715,7 @@ section.contacts .form-container footer .form-btn {
     /* Main Footer */
     
     .main-footer {
-        background-color: #080a0f;
+        background-color: #0d1018;
     }
 
     .main-footer .logo {
@@ -823,7 +823,7 @@ section.contacts .form-container footer .form-btn {
     @media (prefers-color-scheme: dark) {
 
         .hero .main-nav {
-            background-color: #111;
+            background-color: #0d1018;
             box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
         }
     
