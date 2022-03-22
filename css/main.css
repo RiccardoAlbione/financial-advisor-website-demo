@@ -365,7 +365,7 @@ section.consultancy {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1em;
+    gap: 0.8em;
     background-color: #FFF;
     padding: 3em 1.5em;
     box-shadow: 0.4rem 0.4rem 1rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -376,6 +376,10 @@ section.consultancy {
 .consultancy-grid .consultancy-card:hover,
 .consultancy-grid .consultancy-card:focus {
     transform: scale(0.98);
+}
+
+.consultancy-grid .consultancy-card h4 {
+    margin-top: 0.5em;
 }
 
 .consultancy-grid .consultancy-card img:first-of-type {
@@ -665,7 +669,7 @@ section.contacts .form-container footer .form-btn {
     }
 
     .consultancy-grid .consultancy-card img {
-        filter: contrast(130%) brightness(150%);
+        filter: contrast(130%) brightness(220%);
     }
 
     /* Contacts Section */
@@ -679,11 +683,11 @@ section.contacts .form-container footer .form-btn {
     }
 
     section.contacts .contacts-inner a img {
-        filter: contrast(130%) brightness(150%);
+        filter: contrast(130%) brightness(220%);
     }
 
     section.contacts .contacts-inner .down-arrow {
-        filter: contrast(130%) brightness(150%);
+        filter: contrast(130%) brightness(220%);
     }
     
     section.contacts .contacts-inner a {
