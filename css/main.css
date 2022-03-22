@@ -592,14 +592,18 @@ section.contacts .form-container footer .form-btn {
     /* General */
 
     body {
-        color: #FFF;
-        background-color: #111;
+        color: #f0f0f0;
+        background-color: #080a0f;
     }
 
     h1,
     h2,
     h3 {
-        color: #FFF;
+        color: #f0f0f0;
+    }
+
+    img {
+        filter: brightness(.7) contrast(1.2);
     }
 
     .sub-header {
@@ -607,7 +611,8 @@ section.contacts .form-container footer .form-btn {
     }
 
     .map {
-        filter: grayscale(100%) invert(92%) contrast(83%);
+        filter: grayscale(80%) invert(92%) contrast(100%);
+        filter: hue-rotate(80%);
     }
 
     /* Navbar */
@@ -617,7 +622,7 @@ section.contacts .form-container footer .form-btn {
     }
 
     .hero .main-nav ul li a {
-        color: #FFF;
+        color: #f0f0f0;
     }
 
     .hero .main-nav ul li a:hover,
@@ -647,7 +652,7 @@ section.contacts .form-container footer .form-btn {
     /* Consultancy Section */
 
     section.consultancy {
-        background-color: #111;
+        background-color: #080a0f;
     }
 
     .consultancy-content img {
@@ -655,7 +660,7 @@ section.contacts .form-container footer .form-btn {
     }
     
     .consultancy-grid .consultancy-card {
-        background-color: #1b1b1b;
+        background-color: #0f131d;
         box-shadow: 0.4rem 0.4rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
     }
 
@@ -666,7 +671,7 @@ section.contacts .form-container footer .form-btn {
     /* Contacts Section */
 
     section.contacts {
-        color: #FFF;
+        color: #f0f0f0;
     }
 
     section.contacts .contact-label img {
@@ -682,7 +687,7 @@ section.contacts .form-container footer .form-btn {
     }
     
     section.contacts .contacts-inner a {
-        color: #FFF;
+        color: #f0f0f0;
     }
 
     section.contacts .contacts-inner strong {
@@ -696,21 +701,25 @@ section.contacts .form-container footer .form-btn {
     /* Form */
 
     section.contacts .form-container input {
-        background-color: #FFF;
+        background-color: #f0f0f0;
     }
     
     section.contacts .form-container textarea {
-        background-color: #FFF;
+        background-color: #f0f0f0;
     }
     
     section.contacts .form-container input[type='checkbox'] {
-        background-color: #FFF;
+        background-color: #f0f0f0;
     }
 
     /* Main Footer */
     
     .main-footer {
-        background-color: #111;
+        background-color: #080a0f;
+    }
+
+    .main-footer .logo {
+        filter: unset;
     }
 }
 
