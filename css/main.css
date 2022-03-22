@@ -2,6 +2,11 @@
 /* Variables */
 
 :root {
+
+    color-scheme: light dark;
+
+    /* Colors */
+
     --primary-color-light: #253BFF;
     --primary-color-dark: #0011AD;
     --primary-color-desaturated-light: #323978;
@@ -177,7 +182,6 @@ h3::before {
     width: 100%;
     padding: 1em 1.8em;
     z-index: 1000;
-    animation: nav-animation 2.2s ease-in 0.6s both;
 }
 
 .hero .navbar-container .logo {
@@ -569,11 +573,108 @@ section.contacts .form-container footer .form-btn {
 .main-footer .footer-copyright {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     margin: 4em 0 2em;
 }
 
+.main-footer .footer-copyright a {
+    display: inline-block;
+    color: #FFF;
+    margin-left: 0.3em;
+}
+
 /* Media Queries */
+
+@media (prefers-color-scheme: dark) {
+
+    /* General */
+
+    body {
+        color: #FFF;
+        background-color: #111;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #FFF;
+    }
+
+    .sub-header {
+        color: var(--primary-color-light);
+    }
+
+    .map {
+        filter: grayscale(100%) invert(92%) contrast(83%);
+    }
+
+    /* Navbar */
+
+    .hero .navbar-container .logo {
+        filter: brightness(0) invert(1);
+    }
+
+    .hero .main-nav ul li a {
+        color: #FFF;
+    }
+
+    /* Hero Section */
+
+    .hero-content p {
+        color: #dadada;
+    }
+
+    .hero-content .hero-scroll a {
+        color: var(--primary-color-light);
+    }
+
+    /* Consultancy Section */
+
+    section.consultancy {
+        background-color: #111;
+    }
+
+    .consultancy-content img {
+        filter: brightness(80%) contrast(120%);
+    }
+    
+    .consultancy-grid .consultancy-card {
+        background-color: #1b1b1b;
+    }
+
+    .consultancy-grid .consultancy-card img {
+        filter: contrast(130%);
+    }
+
+    /* Contacts Section */
+
+    section.contacts {
+        color: #FFF;
+    }
+
+    section.contacts .contact-label img {
+        filter: brightness(0) invert(1);
+    }
+    
+    section.contacts .contacts-inner a {
+        color: #FFF;
+    }
+    
+    section.contacts .contacts-inner strong {
+        color: var(--primary-color-light);
+    }
+
+    section.contacts .form-container {
+        background-color: var(--primary-color-desaturated-dark);
+    }
+
+    /* Main Footer */
+    
+    .main-footer {
+        background-color: #111;
+    }
+}
 
 @media (max-width: 769px) {
 
@@ -595,7 +696,7 @@ section.contacts .form-container footer .form-btn {
         visibility: hidden;
         opacity: 0;
         max-height: 0;
-        transition: transform 0.45s ease-in, opacity 0.3s ease-in;
+        transition: transform 0.45s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in;
     }
 
     .hero .navbar-container.open .main-nav {
@@ -603,6 +704,14 @@ section.contacts .form-container footer .form-btn {
         opacity: 1;
         max-height: 1000px;
         transform: translateX(0%);
+    }
+
+    .hero .main-nav ul li {
+        display: none;
+    }
+
+    .hero .navbar-container.open .main-nav ul li {
+        display: block;
     }
 
     .hero .main-nav .nav-cta {
@@ -662,6 +771,20 @@ section.contacts .form-container footer .form-btn {
         top: 0;
         transform: rotate(90deg);
         background-color: var(--primary-color-light);
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+        .hero .main-nav {
+            background-color: #1b1b1b;
+            box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
+        }
+    
+        .hero .mobile-menu div,
+        .hero .mobile-menu div::before,
+        .hero .mobile-menu div::after {
+            background-color: #FFF;
+        }
     }
 }
 
